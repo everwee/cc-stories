@@ -8,11 +8,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<header>
+  <div>
+    <a id="menuIcon" href="#">menuIcon</a>
+  </div>
+  <div id="sideMenu">
+    <nav id="nav">
+      <ul>
+        <li><%= link_to 'Home', home_path %></li>
+        <li><%= link_to 'About', about_path %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  
 	<%= yield %>
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
-
+<footer>A shutterbug project</footer>
 </body>
 </html>
