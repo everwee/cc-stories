@@ -1,0 +1,18 @@
+<h1>
+  Signup Form
+</h1>
+<div class="form">
+  <%= form_for(@signup) do |s| %>
+  	<div class="field">
+      <%= s.label :firstname %>
+      <%= s.text_field :firstname %>
+	  </div>
+  	<div class="field">
+      <%= s.label :email %>
+      <%= s.text_field :email %>
+  	</div>
+  	<div class="actions">
+      <%= s.submit "Submit" %>
+    </div>
+  <% end %>
+</div>
